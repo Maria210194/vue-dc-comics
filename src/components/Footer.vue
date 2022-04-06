@@ -1,5 +1,13 @@
 <template>
-  <footer>Footer</footer>
+  <footer>
+    <div class="container">
+      <div>links</div>
+      <div>
+        <img src="../assets/dc-logo-bg.png" alt="DC logo" />
+      </div>
+      <div class="container">sign up</div>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -8,5 +16,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.container {
+  display: flex;
+  justify-content: center;
+}
 </style>
