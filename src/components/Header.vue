@@ -1,7 +1,7 @@
 <template>
   <header>
     <div>
-      <img src="../assets/dc-logo.png" alt="DC logo" />
+      <img src="@/assets/dc-logo.png" alt="DC logo" />
     </div>
     <div>
       <nav>
@@ -28,7 +28,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+$text-size: 11px;
+$link-color: white;
+
 header {
   display: flex;
   justify-content: space-around;
@@ -46,12 +49,12 @@ nav {
 ul {
   display: flex;
   padding-top: 20px;
-}
 
-ul li {
-  list-style-type: none;
-  text-transform: uppercase;
-  padding: 5px;
-  font-size: 11px;
+  li {
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: $text-size;
+  }
 }
 </style>
