@@ -51,6 +51,7 @@ export default {
 
 .panel-images {
   background: #0282f9;
+  height: 100px;
 }
 .logo-images {
   list-style: none;

@@ -1,0 +1,30 @@
+[
+    {
+        "item": "Characters",
+        "id": "0"
+    },
+    {
+        "item": "Comics",
+        "id": "1"
+    },
+    {
+        "item": "Movies",
+        "id": "2"
+    },
+    {
+        "item": "TV",
+        "id": "3"
+    },
+    {
+        "item": "Games",
+        "id": "4"
+    },
+    {
+        "item": "Videos",
+        "id": "5"
+    },
+    {
+        "item": "News",
+        "id": "6"
+    }
+]

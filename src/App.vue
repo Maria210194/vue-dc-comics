@@ -13,14 +13,14 @@ import MainComponent from './components/MainComponent.vue';
 import PanelImages from './components/PanelImages.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
+
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     MainComponent,
     PanelImages,
-    FooterComponent,
-    
+    FooterComponent
 }
 }
 </script>
