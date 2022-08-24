@@ -1,0 +1,42 @@
+[
+    {
+        "item": "character",
+        "active": false
+    }, 
+    {
+        "item": "comics",
+        "active": true
+    }, 
+    {
+        "item": "movies",
+        "active": false
+    }, 
+    {
+        "item": "tv",
+        "active": false
+    }, 
+    {
+        "item": "games",
+        "active": false
+    }, 
+    {
+        "item": "collectibles",
+        "active": false
+    }, 
+    {
+        "item": "videos",
+        "active": false
+    }, 
+    {
+        "item": "fans",
+        "active": false
+    }, 
+    {
+        "item": "news",
+        "active": false
+    }, 
+    {
+        "item": "shop",
+        "active": false
+    }
+]
