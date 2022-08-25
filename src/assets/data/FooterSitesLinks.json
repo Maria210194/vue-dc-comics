@@ -1,22 +1,22 @@
 [
     {
         "item": "DC",
-        "id": "0"
+        "id": 0
     },
     {
         "item": "MAD Magazine",
-        "id": "1"
+        "id": 1
     },
     {
         "item": "DC Kids",
-        "id": "2"
+        "id": 2
     },
     {
         "item": "DC Universe",
-        "id": "3"
+        "id": 3
     },
     {
         "item": "DC Power Visa",
-        "id": "4"
+        "id": 4
     }
 ]

@@ -1,42 +1,52 @@
 [
     {
         "item": "character",
-        "active": false
+        "active": false,
+        "id": 0
     }, 
     {
         "item": "comics",
-        "active": true
+        "active": true,
+        "id": 1    
     }, 
     {
         "item": "movies",
-        "active": false
+        "active": false,
+        "id": 2
     }, 
     {
         "item": "tv",
-        "active": false
+        "active": false,
+        "id": 3
     }, 
     {
         "item": "games",
-        "active": false
+        "active": false,
+        "id": 4
     }, 
     {
         "item": "collectibles",
-        "active": false
+        "active": false,
+        "id": 5
     }, 
     {
         "item": "videos",
-        "active": false
+        "active": false,
+        "id": 6
     }, 
     {
         "item": "fans",
-        "active": false
+        "active": false,
+        "id": 7
     }, 
     {
         "item": "news",
-        "active": false
+        "active": false,
+        "id": 8
     }, 
     {
         "item": "shop",
-        "active": false
+        "active": false,
+        "id": 9
     }
 ]

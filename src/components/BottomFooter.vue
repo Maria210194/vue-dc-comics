@@ -7,29 +7,9 @@
         <div class="contacts">
           <h2>FOLLOW US</h2>
           <ul class="menu">
-            <li>
+            <li v-for="image in images" :key="image.id">
               <a href="#">
-                <img src="@/assets/img/footer-facebook.png" alt="facebook">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="@/assets/img/footer-twitter.png" alt="twitter">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="@/assets/img/footer-youtube.png" alt="youtube">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="@/assets/img/footer-pinterest.png" alt="pinterest">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="@/assets/img/footer-periscope.png" alt="periscope">
+                <img :src="image.src" :alt="image.name">
               </a>
             </li>
           </ul>       
@@ -40,7 +20,38 @@
 
 <script>
 export default {
-    name: 'BottomFooter'
+    name: 'BottomFooter', 
+    data() {
+      return {
+        images: [
+          {          
+            src: require("@/assets/img/footer-facebook.png"),
+            name: "facebook",
+            id: 0
+          },
+                    {          
+            src: require("@/assets/img/footer-twitter.png"),
+            name: "twitter",
+            id: 1
+          },
+                    {          
+            src: require("@/assets/img/footer-youtube.png"),
+            name: "youtube",
+            id: 2
+          },
+                    {          
+            src: require("@/assets/img/footer-pinterest.png"),
+            name: "ointerest",
+            id: 3
+          },
+                    {          
+            src: require("@/assets/img/footer-periscope.png"),
+            name: "periscope",
+            id: 4
+          },
+        ]
+      }
+    }
 
 }
 </script>
@@ -53,7 +64,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
 
   button {
@@ -66,6 +77,7 @@ export default {
     border-radius: 2px;
     &:hover {
       background: #008dff;
+      color: #303030;
     }
   }
 
@@ -76,7 +88,13 @@ export default {
     h2 {
       color: #008dff;
       font-size: 1rem;
+      margin: 0;
     }
+
+    ul{
+      margin: 0;
+    }
+
     .menu {
       list-style: none;
       display: flex;

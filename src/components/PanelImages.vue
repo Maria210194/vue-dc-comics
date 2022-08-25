@@ -2,7 +2,7 @@
   <div class="panel-images">
     <div class="container">
       <ul class="logo-images">
-        <li v-for="image in images" :key="image.name">
+        <li v-for="image in images" :key="image.id">
           <a href="#">
             <img :src="image.src" alt="digital-comics">
             <span>{{image.name}}</span>
@@ -22,23 +22,28 @@ export default {
       images: [
       {
           src: require("@/assets/img/buy-comics-digital-comics.png"),
-          name: "digital comics"
+          name: "digital comics",
+          id: 0
       }, 
       {
           src: require("@/assets/img/buy-comics-merchandise.png"),
-          name: "dc merchandise"
+          name: "dc merchandise",
+          id: 1
       }, 
       {
           src: require("../assets/img/buy-comics-subscriptions.png"),
-          name: "subscription"
+          name: "subscription",
+          id: 2
       }, 
       {
           src: require("../assets/img/buy-comics-shop-locator.png"),
-          name: "comic shop locator"
+          name: "comic shop locator",
+          id: 3
       }, 
       {
           src: require("@/assets/img/buy-dc-power-visa.svg"),
-          name: "dc power visa"
+          name: "dc power visa",
+          id: 4
       }
       ]
     }
@@ -51,7 +56,7 @@ export default {
 
 .panel-images {
   background: #0282f9;
-  height: 100px;
+  height: 90px;
 }
 .logo-images {
   list-style: none;

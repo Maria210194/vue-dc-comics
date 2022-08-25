@@ -8,7 +8,7 @@
         </div>
         <nav>
           <ul class="items">
-            <li v-for="link in HeaderItems" :key="link.item" :class="link.active ? 'active' : '' ">
+            <li v-for="link in HeaderItems" :key="link.id" :class="link.active ? 'active' : '' ">
               <a href="#"> {{ link.item }} </a>
             </li>
           </ul>
