@@ -6,7 +6,7 @@
             <img src="@/assets/img/dc-logo.png" alt="DC-logo">
           </a>
         </div>
-        <nav>
+        <nav class="cl-effect-12">
           <ul class="items">
             <li v-for="link in HeaderItems" :key="link.id" :class="link.active ? 'active' : '' ">
               <a href="#"> {{ link.item }} </a>
@@ -37,6 +37,44 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  .cl-effect-12 a::before,
+  .cl-effect-12 a::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
+  }
+
+  .cl-effect-12 a::after {
+    width: 70px;
+    height: 70px;
+    border-width: 6px;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+  }
+
+  .cl-effect-12 a:hover::before,
+  .cl-effect-12 a:hover::after,
+  .cl-effect-12 a:focus::before,
+  .cl-effect-12 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
 }
 
 img {
@@ -65,21 +103,6 @@ img {
 
 li {
   position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 3px;
-    top: 4rem;
-    padding: 0 5px;
-    background: #0282f9;
-    transform: scaleY(0);
-    transform-origin: left;
-    transition: transform 0.2s ease-in;
-  }
-  &:hover::before {
-    transform: scaleY(1);
-  }
 }
 
 .active {

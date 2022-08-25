@@ -2,10 +2,10 @@
   <div class="bottom-footer">
       <div class="container">
         <div class="action">
-          <button type="button">SIGN-UP NOW!</button>
+          <button type="button" class="sign-up">sign-up now!</button>
         </div>
         <div class="contacts">
-          <h2>FOLLOW US</h2>
+          <a href="https://www.dcuniverseinfinite.com/" class="follow">follow us</a>
           <ul class="menu">
             <li v-for="image in images" :key="image.id">
               <a href="#">
@@ -65,6 +65,10 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+
+    .action{
+      text-transform: uppercase;
+    }
   }
 
   button {
@@ -85,10 +89,13 @@ export default {
     display: flex;
     align-items: center;
     gap: 1rem;
-    h2 {
+    
+    .follow {
       color: #008dff;
       font-size: 1rem;
+      text-transform: uppercase;
       margin: 0;
+      cursor: pointer;
     }
 
     ul{
@@ -96,13 +103,15 @@ export default {
     }
 
     .menu {
-      list-style: none;
       display: flex;
-      align-items: center;
       gap: 1rem;
+      align-items: center;
+      list-style: none;
+      
       a {
         display: flex;
       }
+
       img {
         height: 1.8rem;
         &:hover {
